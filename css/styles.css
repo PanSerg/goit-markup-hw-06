@@ -859,8 +859,6 @@ ul {
 }
 
 .footer-letter {
- 
-  
 }
 
 .text-action {
@@ -878,13 +876,16 @@ ul {
   color: var(--primary-white-color);
 }
 
-.footer-leter-form {
-  
+.footer-leter-form {}
+
+.text {
+  display: flex;
+  width: 570px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-latter-mail {
-  box-sizing: border-box;
-  
   position: absolute;
   width: 358px;
   height: 50px;
@@ -895,20 +896,20 @@ ul {
 }
 
 .send-letter {
+  position: relative;
   padding: 10px 28px;
   padding-right: 62px;
   margin-left: 10px;
 }
 
 .footer-letter-br {
-  position: relative;
 }
 
 .footer-letter-icon {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
+position: absolute;
+top: 50%;
+right: 30px;
+transform: translateY(-50%);
 }
 
 
