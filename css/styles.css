@@ -106,6 +106,13 @@ img {
   transition: transform 250ms var(--cubic-beziar);
  }
 
+ .form {
+  display: block;
+  align-items: center;
+  position: absolute;
+  
+ }
+
  .link {
   display: flex;
   align-items: center;
@@ -113,7 +120,6 @@ img {
   display: block;
 
  }
-
 
  .btn-close {
   position: absolute;

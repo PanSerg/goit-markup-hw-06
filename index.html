@@ -53,7 +53,7 @@
         <button class="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
-      
+       
         <!--Преимущества-->
       <section class="section">
         <div class="container">
@@ -355,7 +355,6 @@
           
           <div class="footer-letter-br">
             <input class="text" class="footer-latter-mail" placeholder="E-mail">
-            
             <button type="submit" class="button send-letter">Підписатися
               <svg class="footer-letter-icon" width="24" height="24">
                 <use href="./images/w4/symbol-defs.svg#icon-icon-send"></use>
@@ -368,6 +367,28 @@
    
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+
+      <form class="form" action="#">
+
+        <p class="modal-title">Залишайте свої данні, ми вам передзвонимо</p>
+        <label for="name">Ім'я</label>
+        <input type="text-form" name="name" id="name" />
+
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" />
+
+        <label for="mail">Пошта</label>
+        <input type="email" name="mail" id="mail" />
+
+        <label for="coment">Коментар</label>
+        <input type="coment" name="coment" id="coment" />
+
+        <button type="submit">Відправити</button>
+        <input type="checkbox" name="agreement" value="agreement">
+        <label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label> 
+
+      </form>
+
       <div>
       <button data-modal-close class="btn-close">
         <svg class="close-icon" width="11" height="11"> 
@@ -377,7 +398,8 @@
       </div>
     </div>
   </div>
-
   <script src="./js/modal.js"></script>
+
+ 
   </body>
 </html>
