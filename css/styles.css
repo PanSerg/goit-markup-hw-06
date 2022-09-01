@@ -104,12 +104,20 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-beziar);
+  outline: 1px solid var(--accent-color);
+ 
  }
 
  .form {
   display: block;
   align-items: center;
   position: absolute;
+ }
+
+ .form-modal {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   
  }
 
@@ -240,6 +248,7 @@ img {
   transform: translateY(100%);
   transition: transform 250ms ease;
 }
+
 .pictures {
   border: 1px solid #EEEEEE;
   background: var(--primary-white-color);
@@ -274,6 +283,10 @@ body {
   font-family: 'Roboto';
   font-family: var(--main-font);
   background-color: var(--primary-white-color);
+}
+
+textarea {
+  resize: none;
 }
 
 .hider-container {

@@ -368,24 +368,32 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
 
-      <form class="form" action="#">
-
+      <form class="form-modal" action="#" autocomplete="off">
+        <div class="form-field">
         <p class="modal-title">Залишайте свої данні, ми вам передзвонимо</p>
-        <label for="name">Ім'я</label>
-        <input type="text-form" name="name" id="name" />
+        <label for="name" class="form-label">Ім'я</label>
+        <input class="form-input" type="text-form" name="name" id="name" />
+        </div>
 
-        <label for="tel">Телефон</label>
+        <div class="form-field">
+        <label for="tel" class="">Телефон</label>
         <input type="tel" name="tel" id="tel" />
+        </div>
 
+        <div class="form-field">
         <label for="mail">Пошта</label>
-        <input type="email" name="mail" id="mail" />
+        <input type="email" name="mail" id="mail" autocomplete="on"/>
+        </div>
 
-        <label for="coment">Коментар</label>
-        <input type="coment" name="coment" id="coment" />
+        <div class="form-field">
+        <label for="">Коментар</label>
+        <textarea name="comment" id="" cols="30" rows="10"
+        placeholder="Введіть текст"></textarea>
+        </div>
 
-        <button type="submit">Відправити</button>
         <input type="checkbox" name="agreement" value="agreement">
-        <label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label> 
+        <label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+        <button type="submit">Відправити</button>
 
       </form>
 
