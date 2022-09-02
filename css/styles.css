@@ -114,8 +114,14 @@ img {
   position: absolute;
  }
 
- .form-input:focus {
-  outline: 1px solid var(--accent-color);
+ .form-label:hover,
+ .form-label:focus {
+  border-color: var(--accent-color);
+ }
+
+ .form-label:hover + .modal-name,
+ .form-label:focus + .modal-name {
+   fill: var(--accent-color);
  }
 
  .form-modal {
@@ -135,9 +141,9 @@ img {
  }
 
  .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
-  
   width: 448px;
   border-radius: 4px;
   font-weight: 400;
@@ -147,15 +153,26 @@ img {
   color: #757575;
  }
 
+ .modal-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(220%);
+  margin-left: 15px;
+  
+  }
+
  .form-field input {
   margin: 0;
   padding: 6px 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  height: 40px;
  }
 
  .form-field label {
-  margin-bottom: 28px;
+  margin-top: 10px;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -171,9 +188,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin-left: 8.38px;
+  margin-top: 20px;
+  margin-bottom: 30px;
  }
 
  .topic-options label {
@@ -194,8 +212,12 @@ img {
  .topic-options input[type="checkbox"] {
   width: 16px;
   height: 15px;
+  left: 36.75%;
+  right: 62.25%;
+  top: 64.75%;
+  bottom: 33.79%;
+  background: #212121;
  }
-
 
 
  .btn-close {
@@ -987,7 +1009,7 @@ ul {
   color: var(--primary-white-color);
 }
 
-.text {
+.text-box {
   display: flex;
   width: 570px;
   flex-direction: row;
@@ -1001,8 +1023,20 @@ ul {
   background-color: rgba(47, 48, 58, 1);
 }
 
+.text-box:hover,
+.text-box:focus {
+  border-radius: var(--accent-color);
+  border-radius: 4px;
+}
+
 .fotter-imput-bt {
   display: flex;
+}
+
+.contract {
+  fill: var(--accent-color);
+  text-decoration: ;
+  
 }
 
 .footer-latter-mail {
@@ -1013,7 +1047,6 @@ ul {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .send-letter {
@@ -1034,6 +1067,17 @@ ul {
 
 .footer-letter-br {
   display: flex;
+}
+
+.footer-letter-br input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .footer-letter-icon {
