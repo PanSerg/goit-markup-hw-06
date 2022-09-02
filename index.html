@@ -400,15 +400,23 @@
         <label class="form-comment" for="comment">Коментар</label>
         <textarea class="form-label" name="comment" id="comment" cols="30" rows="10"
         placeholder="Введіть текст"></textarea>
+        
         </div>
         
         
-        <ul class="topic-options">
-        <li>
-        <input type="checkbox" name="agreement" value="agreement">
-        <label for="agreement">Погоджуюся з розсилкою та приймаю <a class="contract" href="">Умови договору</a></label>
-        </li>
-        </ul>
+        <div class="topic-options">
+        <input type="checkbox" 
+        name="galk" id="galk" 
+        value="agreement" 
+        class="checkbox visually-hidden">
+        <label for="galk" class="checkbox-label">
+          <span><svg class="icon-check" width="11" height="8">
+            <use href="./images/w4/symbol-defs.svg#icon-check"></use>
+          </svg>
+          </span>
+          </div>
+        Погоджуюся з розсилкою та приймаю <a class="contract" href="#">Умови договору</a></label>
+        
         <button type="submit" class="button">Відправити</button>
         
       </form>
