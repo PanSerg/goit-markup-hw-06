@@ -229,6 +229,7 @@ img {
 .checkbox:checked + .checkbox-label {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+  background-origin: border-box;
 }
 
 .checkbox:focus + .checkbox-label {
