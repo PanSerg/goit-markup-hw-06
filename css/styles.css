@@ -128,6 +128,15 @@ img {
    fill: var(--accent-color);
  }
 
+ .galk {
+  display: flex;
+  align-items: center;
+ }
+
+ textarea {
+  padding: 12px;
+ }
+
  .form-modal {
   margin-left: auto;
   margin-right: auto;
@@ -205,8 +214,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16;
-  height: 15;
   border: 2px solid var(--lable-color);
   border-radius: 3px;
   margin-right: 7px;
