@@ -255,6 +255,12 @@ img {
   cursor: pointer;
  }
 
+ .btn-close:focus {
+  fill: var(--accent-color);
+  transition-property: color;
+  transition: transform 250ms var(--cubic-beziar);
+ }
+
 .container {
   width: 1200px;
   padding-left: 15px;
