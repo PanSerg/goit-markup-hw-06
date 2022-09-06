@@ -1009,6 +1009,7 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
+  flex-grow: 1;
 }
 
 .item-with {
@@ -1053,10 +1054,6 @@ ul {
 
 .container-networks {
   margin-left: 70px;
-}
-
-.address-container {
-  flex-grow: 1px;
 }
 
 .text-action {
